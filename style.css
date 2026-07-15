@@ -151,7 +151,7 @@ a:hover {
 }
 
 #discord-btn:hover {
-    box-shadow: 0 4px 15px rgba(88, 101, 242, 0.4);
+    box-shadow: 0 4.5px 16px rgba(88, 101, 242, 0.4);
 }
 
 #discord-btn:active {
@@ -164,7 +164,11 @@ a:hover {
     justify-content: center;
     background-color: #e84fad;
     color: white;
-    gap: 10px
+    gap: 10px;
+}
+
+#edit-btn:hover {
+    box-shadow: 0 4.5px 16px #cf479b;
 }
 
 .baq-icon {

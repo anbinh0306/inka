@@ -1,0 +1,157 @@
+<!-- Chèn thư viện Font Awesome ở <head> nếu chưa có để lấy icon mũi tên -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    
+    <div class="custom-select-container">
+        <!-- 1. Thanh hiển thị giá trị đang chọn -->
+        <div class="select-trigger" id="selectTrigger">
+            <span id="selectedText">Chọn Server Discord</span>
+            <i class="fa-solid fa-chevron-down arrow-icon"></i>
+        </div>
+    
+        <!-- 2. Danh sách các lựa chọn (Bình thường sẽ ẩn đi) -->
+        <ul class="select-options" id="selectOptions">
+            <li class="option-item" data-value="gaming">
+                <i class="fa-solid fa-gamepad" style="color: #ff4757;"></i> Server Gaming & Giải Trí
+            </li>
+            <li class="option-item" data-value="code">
+                <i class="fa-solid fa-code" style="color: #2ed573;"></i> Server Học Lập Trình (JS/HTML)
+            </li>
+            <li class="option-item" data-value="anime">
+                <i class="fa-solid fa-masks-theater" style="color: #ffa502;"></i> Server Anime & Manga
+            </li>
+            <li class="option-item" data-value="music">
+                <i class="fa-solid fa-music" style="color: #1e90ff;"></i> Server Giao Lưu Âm Nhạc
+            </li>
+        </ul>
+    </div>
+    
+    <style>
+        /* Tổng quan khung chứa */
+        .custom-select-container {
+            position: relative;
+            width: 100%;
+            max-width: 350px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    
+        /* Định dạng thanh hiển thị chính (Trigger) */
+        .select-trigger {
+            background-color: #ffffff;
+            padding: 12px 16px;
+            font-size: 15px;
+            color: #333333;
+            border: 1px solid #dcdcdc;
+            border-radius: 8px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Đẩy chữ sang trái, mũi tên sang phải */
+            transition: all 0.3s ease;
+            user-select: none;
+        }
+    
+        /* Hiệu ứng khi click mở hoặc hover vào thanh chọn */
+        .select-trigger:hover, 
+        .custom-select-container.open .select-trigger {
+            border-color: #5865F2; /* Màu tím thương hiệu của bạn */
+            box-shadow: 0 0 0 3px rgba(88, 101, 242, 0.15);
+        }
+    
+        /* Animation xoay mũi tên khi mở menu */
+        .arrow-icon {
+            font-size: 13px;
+            color: #7a7a7a;
+            transition: transform 0.3s ease;
+        }
+        .custom-select-container.open .arrow-icon {
+            transform: rotate(180deg); /* Xoay ngược mũi tên lên trên */
+        }
+    
+        /* Định dạng danh sách các thẻ lựa chọn (Menu thả xuống) */
+        .select-options {
+            position: absolute;
+            top: calc(100% + 6px); /* Nằm ngay dưới thanh chọn và cách ra 6px */
+            left: 0;
+            width: 100%;
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            max-height: 200px;
+            overflow-y: auto; /* Tự xuất hiện scrollbar nếu quá nhiều item giống div trước */
+            z-index: 99; /* Đảm bảo menu thả xuống nằm đè lên các thành phần khác */
+            
+            /* Hiệu ứng ẩn/hiện mượt mà */
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    
+        /* Kích hoạt hiển thị khi container có class .open */
+        .custom-select-container.open .select-options {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    
+        /* Định dạng từng dòng lựa chọn (Item) */
+        .option-item {
+            padding: 12px 16px;
+            font-size: 15px;
+            color: #4a4a4a;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            transition: background-color 0.2s ease;
+        }
+    
+        /* Hiệu ứng khi di chuột qua từng dòng */
+        .option-item:hover {
+            background-color: #f5f7fb;
+            color: #5865F2;
+        }
+    </style>
+    
+    <script>
+        const selectContainer = document.querySelector('.custom-select-container');
+        const selectTrigger = document.getElementById('selectTrigger');
+        const selectedText = document.getElementById('selectedText');
+        const optionItems = document.querySelectorAll('.option-item');
+    
+        // 1. Bấm vào thanh hiển thị để Bật/Tắt menu thả xuống
+        selectTrigger.addEventListener('click', function(e) {
+            e.stopPropagation(); // Ngăn sự kiện click bị lan ra ngoài body
+            selectContainer.classList.toggle('open');
+        });
+    
+        // 2. Bấm chọn một dòng (Item) trong danh sách
+        optionItems.forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.stopPropagation();
+                
+                // Lấy nội dung chữ và icon của dòng vừa bấm (giữ nguyên cấu trúc HTML)
+                selectedText.innerHTML = this.innerHTML;
+                
+                // Đổi màu chữ thanh trigger thành màu đậm hơn sau khi đã chọn
+                selectedText.style.color = '#333333';
+                
+                // Lấy giá trị ẩn (Value) để xử lý logic lập trình nếu cần
+                const value = this.getAttribute('data-value');
+                console.log("Giá trị đã chọn:", value);
+                
+                // Đóng menu lại
+                selectContainer.classList.remove('open');
+            });
+        });
+    
+        // 3. Click ra ngoài vùng chọn thì tự động đóng menu lại cho giống trải nghiệm thật
+        document.addEventListener('click', function() {
+            selectContainer.classList.remove('open');
+        });
+    </script>
+    

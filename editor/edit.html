@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InkA - Viết thư</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cloudflare.com/">
+</head>
+<body>
+    
+
+<div class="container">
+    <div class="head">
+            <h1>I-n-k-A</h1>
+            <p class="slogan">speak love, show loves</p>
+        </div>
+    <div class="body">
+        <div class="metadata">
+        <p class="metadata-p" id="author">Người viết</p> <input type="text" placeholder="Ví dụ: Bznh" class="inputs" id="input-author">
+        <p class="metadata-p" id="receiver">Người nhận</p> <input type="text" placeholder="Ví dụ: That one is very important" class="inputs" id="input-receiver">
+        <p class="metadata-p" id="password">Mật khẩu</p> <input type="password" placeholder="Có thể không nhập"> 
+        <button id="togglePassword">🙉</button>
+    </div>
+
+        <div class="content">
+            <div class="selectionFonts">
+            <div class="selection-trigger" id="selectionTrigger">
+                <span class="selection-text" id="selectionText">Chọn font chữ</span>
+            </div>
+            <ul class="selectFonts" id="selectFonts">
+                <li class="option-item" data-value="alexbrush">Alex Brush</li>
+                <li class="option-item" data-value="allura">Allura</li>
+                <li class="option-item" data-value="comfortaa">Comfortaa</li>
+                <li class="option-item" data-value="cormoran-garamond">Cormoran Garamond</li>
+                <li class="option-item" data-value="dancing-script">Dancing Script</li>
+                <li class="option-item" data-value="great-vibes">Great Vibes</li>
+                <li class="option-item" data-value="inter">Inter</li>
+                <li class="option-item" data-value="libre-baskerville">Libre BaskerVille</li>
+                <li class="option-item" data-value="lora">Lora</li>
+                <li class="option-item" data-value="merriweather">Merriweather</li>
+                <li class="option-item" data-value="montserrat">Montserrat</li>
+                <li class="option-item" data-value="noto-serif">Noto Serif</li>
+                <li class="option-item" data-value="nunito">Nunito</li>
+                <li class="option-item" data-value="open-sans">Open Sans</li>
+                <li class="option-item" data-value="pacifico">Pacifico</li>
+                <li class="option-item" data-value="patrick-hand">Patrick Hand</li>
+                <li class="option-item" data-value="pinyon-script">Pinyon Script</li>
+                <li class="option-item" data-value="playfair-display">Playfair Display</li>
+                <li class="option-item" data-value="prata">Prata</li>
+                <li class="option-item" data-value="quicksand">Quicksand</li>
+                <li class="option-item" data-value="raleway">Raleway</li>
+                <li class="option-item" data-value="roboto-slab">Roboto Slab</li>
+            </ul>
+        </div>
+        </div>
+    
+    </div>
+
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+<script type="module" src="firebase-config.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
