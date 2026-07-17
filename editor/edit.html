@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InkA - Viết thư</title>
+    <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cloudflare.com/">
 </head>
 <body>
-    
-
 <div class="container">
     <div class="head">
             <h1>I-n-k-A</h1>
@@ -29,30 +27,51 @@
                 <span class="selection-text" id="selectionText">Chọn font chữ</span>
             </div>
             <ul class="selectFonts" id="selectFonts">
-                <li class="option-item" data-value="alexbrush">Alex Brush</li>
-                <li class="option-item" data-value="allura">Allura</li>
-                <li class="option-item" data-value="comfortaa">Comfortaa</li>
-                <li class="option-item" data-value="cormoran-garamond">Cormoran Garamond</li>
-                <li class="option-item" data-value="dancing-script">Dancing Script</li>
-                <li class="option-item" data-value="great-vibes">Great Vibes</li>
-                <li class="option-item" data-value="inter">Inter</li>
-                <li class="option-item" data-value="libre-baskerville">Libre BaskerVille</li>
-                <li class="option-item" data-value="lora">Lora</li>
-                <li class="option-item" data-value="merriweather">Merriweather</li>
-                <li class="option-item" data-value="montserrat">Montserrat</li>
-                <li class="option-item" data-value="noto-serif">Noto Serif</li>
-                <li class="option-item" data-value="nunito">Nunito</li>
-                <li class="option-item" data-value="open-sans">Open Sans</li>
-                <li class="option-item" data-value="pacifico">Pacifico</li>
-                <li class="option-item" data-value="patrick-hand">Patrick Hand</li>
-                <li class="option-item" data-value="pinyon-script">Pinyon Script</li>
-                <li class="option-item" data-value="playfair-display">Playfair Display</li>
-                <li class="option-item" data-value="prata">Prata</li>
-                <li class="option-item" data-value="quicksand">Quicksand</li>
-                <li class="option-item" data-value="raleway">Raleway</li>
-                <li class="option-item" data-value="roboto-slab">Roboto Slab</li>
+                <li class="option-item" data-value="alexbrush" id="alexbrush">Alex Brush</li>
+                <li class="option-item" data-value="allura" id="allura">Allura</li>
+                <li class="option-item" data-value="comfortaa" id="comfortaa">Comfortaa</li>
+                <li class="option-item" data-value="cormorant-garamond" id="cormorant-garamond">Cormorant Garamond</li>
+                <li class="option-item" data-value="dancing-script" id="dancing-script">Dancing Script</li>
+                <li class="option-item" data-value="great-vibes" id="great-vibes">Great Vibes</li>
+                <li class="option-item" data-value="inter" id="inter">Inter</li>
+                <li class="option-item" data-value="libre-baskerville" id="libre-baskerville">Libre BaskerVille</li>
+                <li class="option-item" data-value="lora" id="lora">Lora</li>
+                <li class="option-item" data-value="merriweather" id="merriweather">Merriweather</li>
+                <li class="option-item" data-value="montserrat" id="montserrat">Montserrat</li>
+                <li class="option-item" data-value="noto-serif" id="noto-serif">Noto Serif</li>
+                <li class="option-item" data-value="nunito" id="nunito">Nunito</li>
+                <li class="option-item" data-value="open-sans" id="open-sans">Open Sans</li>
+                <li class="option-item" data-value="pacifico" id="pacifico">Pacifico</li>
+                <li class="option-item" data-value="patrick-hand" id="patrick-hand">Patrick Hand</li>
+                <li class="option-item" data-value="pinyon-script" id="pinyon-script">Pinyon Script</li>
+                <li class="option-item" data-value="playfair-display" id="playfair-display">Playfair Display</li>
+                <li class="option-item" data-value="prata" id="prata">Prata</li>
+                <li class="option-item" data-value="quicksand" id="quicksand">Quicksand</li>
+                <li class="option-item" data-value="raleway" id="raleway">Raleway</li>
+                <li class="option-item" data-value="roboto-slab" id="roboto-slab">Roboto Slab</li>
+                <li class="option-item" data-value="times-new-roman" id="times-new-roman">Times New Roman</li>                
             </ul>
         </div>
+            <div class="selection-color">
+                <span class="btn-color" id="red"></span>
+                <span class="btn-color" id="green"></span>
+                <span class="btn-color" id="purple"></span>
+                <span class="btn-color" id="blue"></span>
+                <span class="btn-color" id="yellow"></span>
+                <span class="btn-color" id="pink"></span>
+            </div>
+            <div class="select-templates">
+                <div class="select-trigger" id="selectTrigger">
+                    <span id="defaultText">Chọn phông nền theo kiểu bạn</span>
+                </div>
+                <div class="select-options-box" id="selectOptions">
+                    <div class="class" data-value="donsac" id="opt-donsac">
+                        <span class="option-title">Đơn sắc</span>
+                        <span class="option-desc">Khi bạn muốn đơn giản</span>
+                    </div>
+                </div>
+            </div>
+            </div>
         </div>
     
     </div>

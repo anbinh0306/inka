@@ -64,6 +64,38 @@
 }
 
 .option-item:hover {
-            background-color: #f5f7fb;
-            color: #5865F2;
-        }
+    background-color: #f5f7fb;
+    color: #5865F2;
+}
+
+.btn-color {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#red {
+    background-color: #C21717;
+}
+
+#green {
+    background-color: #6BE36D;
+}
+
+#purple {
+    background-color: #8F6BE3;
+}
+
+#blue {
+    background-color: #6BC9E8;
+}
+
+#yellow {
+    background-color: #E3D36B;
+}
+
+#pink {
+    background-color: #E85FC6;
+}

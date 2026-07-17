@@ -1,0 +1,206 @@
+@font-face {
+    font-family: "Alex Brush";
+    src: url("../fonts/AlexBrush.ttf");
+}
+
+@font-face {
+    font-family: "Allura";
+    src: url("../fonts/Allura.ttf");
+}
+
+@font-face {
+    font-family: "Comfortaa";
+    src: url("../fonts/Comfortaa.ttf");
+}
+
+@font-face {
+    font-family: "Cormorant Garamond";
+    src: url("../fonts/CormorantGaramond.ttf");
+}
+
+@font-face {
+    font-family: "Dancing Script";
+    src: url("../fonts/DancingScript.ttf");
+}
+
+@font-face {
+    font-family: "Great Vibes";
+    src: url("../fonts/GreatVibes.ttf");
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter.ttf");
+}
+
+@font-face {
+    font-family: "Libre Baskerville";
+    src: url("../fonts/LibreBaskerville.ttf");
+}
+
+@font-face {
+    font-family: "Lora";
+    src: url("../fonts/Lora.ttf");
+}
+
+@font-face {
+    font-family: "Merriweather";
+    src: url("../fonts/Merriweather.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat.ttf");
+}
+
+@font-face {
+    font-family: "Noto Serif";
+    src: url("../fonts/NotoSerif.ttf");
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url("../fonts/Nunito.ttf");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans.ttf");
+}
+
+@font-face {
+    font-family: "Pacifico";
+    src: url("../fonts/Pacifico.ttf");
+}
+
+@font-face {
+    font-family: "Patrick Hand";
+    src: url("../fonts/PatrickHand.ttf");
+}
+
+@font-face {
+    font-family: "Pinyon Script";
+    src: url("../fonts/PinyonScript.ttf");
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("../fonts/Playfair.ttf");
+}
+
+@font-face {
+    font-family: "Prata";
+    src: url("../fonts/Prata.ttf");
+}
+
+@font-face {
+    font-family: "Quicksand";
+    src: url("../fonts/Quicksand.ttf");
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../fonts/Raleway.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Slab";
+    src: url("../fonts/RobotoSlab.ttf");
+}
+
+@font-face {
+    font-family: "Times New Roman";
+    src: url("../fonts/TimesNewRoman.ttf");
+}
+
+#alexbrush {
+    font-family: "Alex Brush";
+}
+
+#allura {
+    font-family: "Allura";
+}
+
+#comfortaa {
+    font-family: "Comfortaa";
+}
+
+#cormoran-garamond {
+    font-family: "Cormoran Garamond";
+}
+
+#dancing-script {
+    font-family: "Dancing Script";
+}
+
+#great-vibes {
+    font-family: "Great Vibes";
+}
+
+#inter {
+    font-family: "Inter";
+}
+
+#libre-baskerville {
+    font-family: "Libre Baskerville";
+}
+
+#lora {
+    font-family: "Lora";
+}
+
+#merriweather {
+    font-family: "Merriweather";
+}
+
+#montserrat {
+    font-family: "Montserrat";
+}
+
+#noto-serif {
+    font-family: "Noto Serif";
+}
+
+#nunito {
+    font-family: "Nunito";
+}
+
+#open-sans {
+    font-family: "Open Sans";
+}
+
+#pacifico {
+    font-family: "Pacifico";
+}
+
+#patrick-hand {
+    font-family: "Patrick Hand";
+}
+
+#pinyon-script {
+    font-family: "Pinyon Script";
+}
+
+#playfair-display {
+    font-family: "Playfair Display";
+}
+
+#prata {
+    font-family: "Prata";
+}
+
+#quicksand {
+    font-family: "Quicksand";
+}
+
+#raleway {
+    font-family: "Raleway";
+}
+
+#roboto-slab {
+    font-family: "Roboto Slab";
+}
+
+#times-new-roman {
+    font-family: "Times New Roman";
+}
