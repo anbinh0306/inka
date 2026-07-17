@@ -102,14 +102,19 @@
     background-color: #E85FC6;
 }
 
-#enterContent {
-    width:50%;
+textarea {
+    margin-top: 3vh;
+    width: 100%;
     min-height: 260px;
     padding: 18px;
     border-radius: 18px;
-    border: 1px solid rgba(0,0,0,.08);
+    border: 1px solid pink;
     font-size: 16px;
     line-height: 1.8;
     resize: vertical;
     box-sizing: border-box;
+}
+
+textarea:focus {
+    outline: none;
 }
