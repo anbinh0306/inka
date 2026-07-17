@@ -5,7 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InkA - Viết thư</title>
     <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="templates.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="templates/angmay.css">
+    <link rel="stylesheet" href="templates/avocado.css">
+    <link rel="stylesheet" href="templates/donsac.css">
+    <link rel="stylesheet" href="templates/dongque.css">
+    <link rel="stylesheet" href="templates/chiemtinhhoc.css">
+    <link rel="stylesheet" href="templates/quangpho.css">
+    <link rel="stylesheet" href="templates/avocado.css">
+    <link rel="stylesheet" href="templates/vooli.css">
+    <link rel="stylesheet" href="templates/expresslove.css">
+    <link rel="stylesheet" href="templates/matnuoc.css">
+    <link rel="stylesheet" href="templates/valentine.css">
+    <link rel="stylesheet" href="templates/baibien.css">
+    <link rel="stylesheet" href="templates/vuontrenmay.css">
+    <link rel="stylesheet" href="templates/momong.css">
+    <link rel="stylesheet" href="templates/tuongtu.css">
+    <link rel="stylesheet" href="templates/angmay.css">
+    <link rel="stylesheet" href="templates/dracula.css">
+    <link rel="stylesheet" href="templates/romantic.css">
+    <link rel="stylesheet" href="templates/messhong.css">
+    <link rel="stylesheet" href="templates/mattrangkhuyet.css">
+    <link rel="stylesheet" href="templates/taydantay.css">
+    <link rel="stylesheet" href="templates/zodiacs/aries.css">
+    <link rel="stylesheet" href="templates/zodiacs/taurus.css">
+    <link rel="stylesheet" href="templates/zodiacs/gemini.css">
+    <link rel="stylesheet" href="templates/zodiacs/cancer.css">
+    <link rel="stylesheet" href="templates/zodiacs/leo.css">
+    <link rel="stylesheet" href="templates/zodiacs/virgo.css">
+    <link rel="stylesheet" href="templates/zodiacs/libra.css">
+    <link rel="stylesheet" href="templates/zodiacs/scorpio.css">
+    <link rel="stylesheet" href="templates/zodiacs/sagittarius.css">
+    <link rel="stylesheet" href="templates/zodiacs/capricorn.css">
+    <link rel="stylesheet" href="templates/zodiacs/aquarius.css">
+    <link rel="stylesheet" href="templates/zodiacs/pisces.css">
+    <link rel="stylesheet" href="templates/giayvasap.css">
 </head>
 <body>
 <div class="container">
@@ -65,12 +100,141 @@
                     <span id="defaultText">Chọn phông nền theo kiểu bạn</span>
                 </div>
                 <div class="select-options-box" id="selectOptions">
-                    <div class="class" data-value="donsac" id="opt-donsac">
-                        <span class="option-title">Đơn sắc</span>
+                    <div class="option-card" data-value="donsac" id="opt-donsac">
+                        <span class="option-title">🤍 Đơn sắc</span>
                         <span class="option-desc">Khi bạn muốn đơn giản</span>
                     </div>
+                    <div class="option-card" data-value="dongque" id="opt-dongque">
+                        <span class="option-title">🌱 Đồng quê</span>
+                        <span class="option-desc">Khi bạn muốn gần gũi</span>
+                    </div>
+                    <div class="option-card" data-value="chiemtinhhoc" id="opt-chiemtinhhoc">
+                        <span class="option-title">⭐ Chiêm tinh học</span>
+                        <span class="option-desc">Khi bạn ngắm sao</span>
+                    </div>
+                    <div class="option-card" data-value="quangpho" id="opt-quangpho">
+                        <span class="option-title">💥 Quang phổ</span>
+                        <span class="option-desc">Khi bạn muốn huyền ảo</span>
+                    </div>
+                    <div class="option-card" data-value="avocado" id="opt-avocado">
+                        <span class="option-title">🥑 Avocado</span>
+                        <span class="option-desc">Khi bạn muốn là nửa kia hoàn hảo</span>
+                    </div>
+                    <div class="option-card" data-value="vooli" id="opt-vooli">
+                        <span class="option-title">📖 Vở ô li</span>
+                        <span class="option-desc">Khi bạn là học sinh</span>
+                    </div>
+                    <div class="option-card" data-value="expresslove" id="opt-expresslove">
+                        <span class="option-title">💟 Express love</span>
+                        <span class="option-desc">Khi bạn muốn thổ lộ</span>
+                    </div>
+                    <div class="option-card" data-value="matnuoc" id="opt-matnuoc">
+                        <span class="option-title">🌊 Mặt nước</span>
+                        <span class="option-desc">Khi bạn muốn êm ái</span>
+                    </div>
+                    <div class="option-card" data-value="valentine" id="opt-valentine">
+                        <span class="option-title">💖 Valentine</span>
+                        <span class="option-desc">Khi bạn muốn nồng cháy</span>
+                    </div>
+                    <div class="option-card" data-value="baibien" id="opt-baibien">
+                        <span class="option-title">🏖 Bãi biển</span>
+                        <span class="option-desc">Khi bạn muốn mát mẻ</span>
+                    </div>
+                    <div class="option-card" data-value="vuontrenmay" id="opt-vuontrenmay">
+                        <span class="option-title">🏡 Vườn trên mây</span>
+                        <span class="option-desc">Khi bạn muốn lơ lửng</span>
+                    </div>
+                    <div class="option-card" data-value="momong" id="opt-momong">
+                        <span class="option-title">💞 Mơ mộng</span>
+                        <span class="option-desc">Khi bạn nhớ nhung</span>
+                    </div>
+                    <div class="option-card" data-value="tuongtu" id="opt-tuongtu">
+                        <span class="option-title">💝 Tương tư</span>
+                        <span class="option-desc">Khi bạn suy tư</span>
+                    </div>
+                    <div class="option-card" data-value="angmay" id="opt-angmay">
+                        <span class="option-title">☁ Áng mây</span>
+                        <span class="option-desc">Khi bạn muốn bồng bềnh</span>
+                    </div>
+                    <div class="option-card" data-value="dracula" id="opt-dracula">
+                        <span class="option-title">🧛‍♂️ Dracula</span>
+                        <span class="option-desc">Khi bạn muốn sở hữu</span>
+                    </div>
+                    <div class="option-card" data-value="romantic" id="opt-romantic">
+                        <span class="option-title">🔥 Romantic</span>
+                        <span class="option-desc">Khi bạn cần lãng mạn</span>
+                    </div>
+                    <div class="option-card" data-value="messhong" id="opt-messhong">
+                        <span class="option-title">💟 Mess hồng</span>
+                        <span class="option-desc">Khi bạn muốn bong bóng chat</span>
+                    </div>
+                    <div class="option-card" data-value="mattrangkhuyet" id="opt-mattrangkhuyet">
+                        <span class="option-title">🌙 Mặt trăng khuyết</span>
+                        <span class="option-desc">Khi bạn muốn ngắm trăng</span>
+                    </div>
+                    <div class="option-card" data-value="taydantay" id="opt-taydantay">
+                        <span class="option-title">👫 Tay đan tay</span>
+                        <span class="option-desc">Khi bạn muốn gắn kết</span>
+                    </div>
+                    <div class="option-card" data-value="aries" id="opt-aries">
+                        <span class="option-title">♈ Aries - Bạch Dương</span>
+                        <span class="option-desc">Khi bạn hoặc ai đó sinh nhật vào 21/03 - 19/04</span>
+                    </div>
+                    <div class="option-card" data-value="taurus" id="opt-taurus">
+                        <span class="option-title">♉ Taurus - Kim Ngưu</span>
+                        <span class="option-desc">Khi bạn hoặc ai đó sinh nhật vào 20/04 - 20/05</span>
+                    </div>
+                    <div class="option-card" data-value="gemini" id="opt-gemini">
+                        <span class="option-title">♊ Gemini - Song Tử</span>
+                        <span class="option-desc">Khi bạn hoặc ai đó sinh nhật vào 21/05 - 21/06</span>
+                    </div>
+                    <div class="option-card" data-value="cancer" id="opt-cancer">
+                        <span class="option-title">♋ Cancer - Cự Giải</span>
+                        <span class="option-desc">Khi bạn hoặc ai đó sinh nhật vào 22/06 - 22/07</span>
+                    </div>
+                    <div class="option-card" data-value="leo" id="opt-leo">
+                        <span class="option-title">♌ Leo - Sư Tử</span>
+                        <span class="option-desc">Khi bạn hoặc ai đó sinh nhật vào 23/07 - 22/08</span>
+                    </div>
+                    <div class="option-card" data-value="virgo" id="opt-virgo">
+                        <span class="option-title">♍ Virgo - Xử Nữ</span>
+                        <span class="option-desc">Khi bạn hoặc ai đó sinh nhật vào 23/08 - 22/09</span>
+                    </div>
+                    <div class="option-card" data-value="libra" id="opt-libra">
+                        <span class="option-title">♎ Libra - Thiên Bình</span>
+                        <span class="option-desc">Khi bạn hoặc ai đó sinh nhật vào 23/09 - 23/10</span>
+                    </div>
+                    <div class="option-card" data-value="scorpio" id="opt-scorpio">
+                        <span class="option-title">♏ Scorpio - Bọ Cạp</span>
+                        <span class="option-desc">Khi bạn hoặc ai đó sinh nhật vào 24/10 - 22/11</span>
+                    </div>
+                    <div class="option-card" data-value="sagittarius" id="opt-sagittarius">
+                        <span class="option-title">♐ Sagittarius - Nhân Mã</span>
+                        <span class="option-desc">Khi bạn hoặc ai đó sinh nhật vào 23/11 - 21/12</span>
+                    </div>
+                    <div class="option-card" data-value="capricorn" id="opt-capricorn">
+                        <span class="option-title">♑ Capricorn - Ma Kết</span>
+                        <span class="option-desc">Khi bạn hoặc ai đó sinh nhật vào 22/12 - 19/01</span>
+                    </div>
+                    <div class="option-card" data-value="aquarius" id="opt-aquarius">
+                        <span class="option-title">♒ Aquarius - Bảo Bình</span>
+                        <span class="option-desc">Khi bạn hoặc ai đó sinh nhật vào 20/01 - 18/02</span>
+                    </div>
+                    <div class="option-card" data-value="pisces" id="opt-pisces">
+                        <span class="option-title">♓ Pisces - Song Ngư</span>
+                        <span class="option-desc">Khi bạn hoặc ai đó sinh nhật vào 19/02 - 20/03</span>
+                    </div>
+                    <div class="option-card" data-value="giayvasap" id="opt-giayvasap">
+                        <span class="option-title">💌 Giấy và Sáp</span>
+                        <span class="option-desc">Khi bạn tôn trọng cổ điển</span>
+                    </div>
+                    </div>
                 </div>
+                <textarea name="enter-content" id="enterContent" placeholder="Nhập lời nhắn gửi của bạn"></textarea>
             </div>
+            </div>
+            <div class="footer">
+                <button id="sendLetters">Gửi thư</button>
             </div>
         </div>
     
@@ -78,6 +242,7 @@
 
 </div>
 
+<script src="templates.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
 <script type="module" src="firebase-config.js"></script>

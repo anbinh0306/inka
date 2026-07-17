@@ -1,3 +1,7 @@
+* {
+    overflow: visible;
+}
+
 .selectionFonts {
     position: relative;
     width: 100%;
@@ -14,7 +18,7 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Đẩy chữ sang trái, mũi tên sang phải */
+    justify-content: space-between;
     transition: all 0.3s ease;
     user-select: none;
 }
@@ -25,25 +29,23 @@
 
 .selectFonts {
     position: absolute;
-            top: calc(100% + 6px); /* Nằm ngay dưới thanh chọn và cách ra 6px */
-            left: 0;
-            width: 100%;
-            background-color: #ffffff;
-            border: 1px solid #e0e0e0;
-            border-radius: 8px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-            padding: 0;
-            margin: 0;
-            list-style: none;
-            max-height: 200px;
-            overflow-y: auto; /* Tự xuất hiện scrollbar nếu quá nhiều item giống div trước */
-            z-index: 99; /* Đảm bảo menu thả xuống nằm đè lên các thành phần khác */
-            
-            /* Hiệu ứng ẩn/hiện mượt mà */
-            opacity: 0;
-            visibility: hidden;
-            transform: translateY(-10px);
-            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    top: calc(100% + 6px);
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .selectionFonts.open .selectFonts {
@@ -98,4 +100,16 @@
 
 #pink {
     background-color: #E85FC6;
+}
+
+#enterContent {
+    width:50%;
+    min-height: 260px;
+    padding: 18px;
+    border-radius: 18px;
+    border: 1px solid rgba(0,0,0,.08);
+    font-size: 16px;
+    line-height: 1.8;
+    resize: vertical;
+    box-sizing: border-box;
 }

@@ -1,0 +1,129 @@
+.select-templates {
+    position: relative;
+    width: 100%;
+    max-width: 380px;
+}
+
+.select-trigger {
+    background-color: #ffffff;
+    padding: 14px 18px;
+    font-size: 16px;
+    color: #333333;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+
+.select-trigger:hover {
+    box-shadow: 0 0 0 3px rgba(88, 101, 242, 0.15);
+    transition: .25s ease;
+}
+
+.select-options-box {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,.4);
+    padding: 10px;
+    background: rgba(255, 255, 255, .45);
+    backdrop-filter: blur(22px) saturate(180%);
+    -webkit-backdrop-filter: blur(22px) saturate(180%);
+    box-shadow:
+        0 8px 32px rgba(0,0,0,.12),
+        inset 0 1px rgba(255,255,255,.5);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    overflow-y: auto;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px) scale(.98);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    max-height: 380px;
+    overscroll-behavior: contain;
+}
+
+.select-templates.open .select-options-box {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+}
+
+.option-card {
+    padding: 12px 16px;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    transition: all 0.25s ease;
+    border: 1px solid transparent;
+    position: relative;
+    background: rgba(255,255,255,.12);
+}
+
+.option-card:hover{
+    background: rgba(255,255,255,.28);
+    border-color: rgba(255,255,255,.35);
+    transform: translateX(5px);
+    box-shadow: 0 6px 18px rgba(0,0,0,.08);
+}
+
+.option-card.active::after{
+    content:"✅";
+    position:absolute;
+    right:16px;
+    top:50%;
+    transform:translateY(-50%);
+    color:#2563eb;
+    font-weight:bold;
+}
+
+.option-title {
+    font-family: "Roboto Slab";
+    font-weight: 600;
+    font-size: 15px;
+    transition: 0.25s ease;
+}
+
+.option-card:hover .option-title{
+    color:#2563eb;
+}
+
+.option-desc {
+    font-family: "Lora";
+    font-size: 12px;
+    opacity: 0.8;
+    font-style: italic;
+    transition: 0.25s ease;
+}
+
+.option-card:hover .option-desc{
+    opacity:1;
+}
+
+.select-options-box::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.select-options-box::-webkit-scrollbar{
+    width:7px;
+}
+
+.select-options-box::-webkit-scrollbar-thumb{
+    background:rgba(255,255,255,.35);
+    border-radius:999px;
+}
+
+.select-options-box::-webkit-scrollbar-thumb:hover{
+    background:rgba(255,255,255,.55);
+}
